@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TaskFirst
+﻿namespace ConsoleAPP2
 {
     internal class Program
     {
@@ -9,7 +7,7 @@ namespace TaskFirst
             Console.WriteLine("Начало 1 задачи");
             Console.WriteLine("======================");
             Console.Write("Ведите число n: ");
-            string? buf = Console.ReadLine();
+            string? buf = Console.ReadLine(); 
             int n = int.Parse(buf);
             Console.Write("Введите число m: ");
             buf = Console.ReadLine();
@@ -53,15 +51,16 @@ namespace TaskFirst
             
             Console.WriteLine("Начало 3 задачи");
             Console.WriteLine("======================");
+            
             double a = 1000;
             double b = 0.0001;
-
+            
             double cubeDifference = (a - b) * (a - b) * (a - b);
             double denominator = 3 * a * b * b - b * b * b;
             double numerator = cubeDifference - (a * a * a - 3 * a * a * b);
             double dfraction  = numerator  / denominator;
             Console.WriteLine("Результат с типом double : " + dfraction);
-
+            
             float fcubeDifference = (float)((a - b) * (a - b) * (a - b));
             float fdenominator = (float)(3 * a * b * b - b * b * b);
             float fnumerator = (float)(fcubeDifference - (a * a * a - 3 * a * a * b));
